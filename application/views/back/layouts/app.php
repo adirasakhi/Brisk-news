@@ -20,6 +20,7 @@
   <!-- Custom styles for this template-->
   <link href="<?= base_url("assets/back/css/sb-admin-2.min.css") ?>" rel="stylesheet">
 
+
   <link rel="stylesheet" href="<?= base_url("assets/back/vendors/summernote/dist/summernote-bs4.min.css") ?>">
 
 </head>
@@ -43,7 +44,7 @@
         <?php $this->load->view('back/layouts/_navbar') ?>
 
         <!-- Begin Page Content -->
-        <?php $this->load->view('back/pages/'. $page) ?>
+        <?php $this->load->view('back/pages/' . $page) ?>
 
       </div>
       <!-- End of Main Content -->
@@ -83,20 +84,20 @@
 
   <!-- Sweet Alert 2 -->
   <script src="<?= base_url("assets/back/vendors/sweetalert2/sweetalert2.js") ?>"></script>
-  
+
 
   <!-- For Datatable -->
-  <?php 
-    if(isset($datatable)){
-      $this->load->view('back/pages/'. $datatable);
-    }
+  <?php
+  if (isset($datatable)) {
+    $this->load->view('back/pages/' . $datatable);
+  }
   ?>
 
   <!-- For Chart in Dashboard -->
-  <?php 
-    if(isset($pageChart)){
-      $this->load->view('back/layouts/'. $pageChart);
-    }
+  <?php
+  if (isset($pageChart)) {
+    $this->load->view('back/layouts/' . $pageChart);
+  }
   ?>
 
 

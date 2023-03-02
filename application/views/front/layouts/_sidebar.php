@@ -3,7 +3,7 @@
 
       <aside class="r_widgets news_widgets">
          <div class="main_title2">
-            <h2>Most Popular News</h2>
+            <h2>Berita Populer</h2>
          </div>
          <div class="choice_item">
             <img class="img-fluid" src="<?= base_url("images/posting/large/$popular->photo") ?>" alt="">
@@ -20,7 +20,7 @@
          </div>
 
          <div class="main_title2 mb-5">
-            <h2>Trending Now</h2>
+            <h2>Sedang Tren</h2>
          </div>
          <div class="news_slider owl-carousel">
             <?php foreach ($trending as $t) : ?>
@@ -43,12 +43,12 @@
 
       <aside class="r_widgets social_widgets mt-5">
          <div class="main_title2">
-            <h2>Social Networks</h2>
+            <h2>Jaringan Sosial</h2>
          </div>
          <ul class="list">
-            <li><a href="#"><i class="fa fa-facebook"></i>brisk news<span>Like our page</span></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i>brisk news<span>Follow Us</span></a></li>
-            <li><a href="#"><i class="fa fa-youtube-play"></i>brisk news<span>Subscribe</span></a></li>
+            <li><a href="https://www.facebook.com/CNNIndonesia/?locale=id_ID"><i class="fa fa-facebook"></i>brisk news<span>Like our page</span></a></li>
+            <li><a href="https://twitter.com/CNNIndonesia"><i class="fa fa-twitter"></i>brisk news<span>Follow Us</span></a></li>
+            <li><a href="https://www.youtube.com/channel/UCKII0Ml9S5wneKbHswmUrIQ"><i class="fa fa-youtube-play"></i>brisk news<span>Subscribe</span></a></li>
          </ul>
       </aside>
 

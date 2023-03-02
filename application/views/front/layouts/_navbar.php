@@ -5,7 +5,7 @@ $navbar   = $this->category->getCategory();
 $category = $this->uri->segment(3);
 ?>
 
-<nav class="navbar navbar-light navbar-expand-lg navbar-light bg-danger fixed-top home">
+<nav class="navbar navbar-light navbar-expand-lg navbar-light bg-danger fixed-top home mb-5">
    <div class="container">
       <a href="<?= base_url() ?>" class="navbar-brand d-flex w-50 mr-auto">
          <img src="<?= base_url('images/brand/13.gif') ?>" height="60" alt=""><br>Brisk News
@@ -25,17 +25,17 @@ $category = $this->uri->segment(3);
          </ul>
          <ul class="nav navbar-nav ml-auto w-100 justify-content-end ">
             <li class="nav-item">
-               <a class="nav-link" href="<?= base_url() ?>">
+               <a class="nav-link" href="https://twitter.com/CNNIndonesia" target="_blank">
                   <i class="fa fa-twitter"></i>
                </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="<?= base_url() ?>">
+               <a class="nav-link" href="https://www.instagram.com/nagaimariaa" target="_blank">
                   <i class="fa fa-instagram"></i>
                </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="<?= base_url() ?>">
+               <a class="nav-link" href="https://www.facebook.com/CNNIndonesia/?locale=id_ID" target="_blank">
                   <i class="fa fa-facebook"></i>
                </a>
             </li>

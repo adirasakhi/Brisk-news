@@ -40,9 +40,9 @@
                   <h3>Social Networks</h3>
                </div>
                <div class="col-lg-4 col-md-4 footer-social icon mx-auto">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-youtube-play"></i></a>
+                  <a href="https://www.facebook.com/CNNIndonesia/?locale=id_ID"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/CNNIndonesia"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/channel/UCKII0Ml9S5wneKbHswmUrIQ"><i class="fa fa-youtube-play"></i></a>
                </div>
             </div>
          </div>

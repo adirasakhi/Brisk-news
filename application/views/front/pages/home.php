@@ -7,11 +7,11 @@
          <div class="carousel-item <?php if ($no <= 1) {
                                        echo "active";
                                     } ?> ">
-            <div class="row align-items-center my-5">
-               <div class="col-lg-8">
-                  <img class="img-fluid mb-4 mb-lg-0" src="<?= base_url("images/posting/$f->photo") ?>" alt="">
+            <div class="row align-items-center mt-5">
+               <div class="col-lg-8 mt-5 pl-5">
+                  <img class="img-fluid mb-4 mb-lg-0 ml-5 pl-5" src="<?= base_url("images/posting/$f->photo") ?>" alt="">
                </div>
-               <div class="col-lg-4">
+               <div class="col-lg-4 mt-5">
                   <div class="container">
                      <div class="date text-center">
                         <a class="genric-btn success circle small" href="<?= base_url("blog/category/$f->slug") ?>"><?= $f->category_name ?></a>
@@ -41,27 +41,7 @@
 </div>
 <!--================ End Home Banner Area =================-->
 
-<!--================ Subscribe Area =================-->
-<div class="card bg-light text-center">
-   <div class="card-body">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-6 col-sm-4">
-               <h4 class="float-right my-2 text-dark">Subscribe to our Brisk News</h4>
-            </div>
-            <div class="col-lg-6 col-sm-8">
-               <form action="" class="form-inline">
-                  <div class="form-group">
-                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                     <button class="genric-btn danger radius ml-2">Subscribe</button>
-                  </div>
-               </form>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-<!--================ End Subscribe Area =================-->
+
 
 <!--================ Choice Area =================-->
 <section class="choice_area mt-4">

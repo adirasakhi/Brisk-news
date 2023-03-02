@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+<nav class="navbar navbar-expand navbar-light bg-gradient-info topbar mb-4 static-top shadow">
 
    <!-- Sidebar Toggle (Topbar) -->
    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -20,12 +20,12 @@
          <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
             <a class="dropdown-item" href="<?= base_url('auth/edit_user/' . $this->session->userdata('id')) ?>">
                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-               Profile
+               Profil
             </a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="" data-toggle="modal" data-target="#logoutModal">
                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-               Logout
+               Keluar
             </a>
          </div>
       </li>
@@ -39,15 +39,16 @@
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Siap Keluar?</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">×</span>
             </button>
          </div>
-         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+         <div class="modal-body">Pilih "keluar"
+            di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
          <div class="modal-footer">
-            <button class="btn btn-danger" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-success" href="<?= base_url('auth/logout') ?>">Logout</a>
+            <button class="btn btn-danger" type="button" data-dismiss="modal">Batal</button>
+            <a class="btn btn-success" href="<?= base_url('auth/logout') ?>">Keluar</a>
          </div>
       </div>
    </div>
