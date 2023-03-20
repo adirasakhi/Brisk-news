@@ -1,39 +1,39 @@
 <div class="container">
    <div class="row">
       <div class="col">
-         <h3 class="page-header">SubMenu Management</h3>
+         <h3 class="page-header">Mengatur SubMenu</h3>
       </div>
    </div>
 
    <div class="row mt-3">
       <div class="col">
          <button type="buton" class="btn btn-success btn-sm" onclick="add_submenu()">
-               <i class="fas fa-plus"></i> Add
+            <i class="fas fa-plus"></i> Tambah
          </button>
 
          <button class="btn btn-outline-secondary btn-sm" onclick="reload_table()">
-               <i class="fas fa-sync-alt"></i> Reload
+            <i class="fas fa-sync-alt"></i> Reload
          </button>
       </div>
    </div>
 
 
-  <br>
+   <br>
 
    <div class="table-responsive">
-      <table id="tableSubmenu" class="table table-striped table-bordered"  cellspacing="0" width="100%">
+      <table id="tableSubmenu" class="table table-striped table-bordered" cellspacing="0" width="100%">
          <thead>
-         <tr>
-            <th>#</th>
-            <th>Submenu name</th>
-            <th>URL</th>
-            <th>Main Menu</th>
-            <th>Active</th>
-            <th>Action</th>
-         </tr>
+            <tr>
+               <th>#</th>
+               <th>Nama Submenu</th>
+               <th>URL</th>
+               <th>Menu Utama</th>
+               <th>Aktif</th>
+               <th>Aksi</th>
+            </tr>
          </thead>
          <tbody>
-         
+
          </tbody>
       </table>
    </div>
@@ -52,15 +52,15 @@
          </div>
          <div class="modal-body">
             <form action="#" class="form-horizontal" id="form">
-            
+
                <input type="hidden" name="id" id="id">
 
                <div class="form-group row">
-                  <label for="title" class="col-sm-3 col-form-label">Submenu name</label>
+                  <label for="title" class="col-sm-3 col-form-label">Nama Submenu</label>
                   <div class="col-sm-9">
                      <input type="text" class="form-control" id="sub_title" name="sub_title">
                   </div>
-               </div> 
+               </div>
 
                <div class="form-group row">
                   <label for="url" class="col-sm-3 col-form-label">URL</label>
@@ -70,23 +70,23 @@
                </div>
 
                <div class="form-group row">
-                  <label for="category" class="col-sm-3 col-form-label">Main Menu</label>
+                  <label for="category" class="col-sm-3 col-form-label">Menu Utama</label>
                   <div class="col-sm-9">
                      <select class="form-control" id="id_menu" name="id_menu">
                         <option>- Select -</option>
-                        <?php foreach($menu as $m) : ?>
-                           <option value="<?= $m->id ?>"><?= $m->title ?></option> 
+                        <?php foreach ($menu as $m) : ?>
+                           <option value="<?= $m->id ?>"><?= $m->title ?></option>
                         <?php endforeach ?>
                      </select>
                   </div>
-               </div>  
+               </div>
 
                <div class="form-group row">
-                  <label for="Active" class="col-sm-3 col-form-label">Active</label>
+                  <label for="Active" class="col-sm-3 col-form-label">Aktif</label>
                   <div class="col-sm-9">
                      <select class="form-control" id="is_active" name="is_active">
-                           <option value="Y">Yes</option> 
-                           <option value="N">No</option>
+                        <option value="Y">Ya</option>
+                        <option value="N">Tidak</option>
                      </select>
                   </div>
                </div>
@@ -94,8 +94,8 @@
             </form>
          </div>
          <div class="modal-footer">
-            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-sm btn-primary" onclick="save()" id="btn_save">Save</button>
+            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-sm btn-primary" onclick="save()" id="btn_save">Simpan</button>
          </div>
       </div>
    </div>

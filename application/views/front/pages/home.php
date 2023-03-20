@@ -21,7 +21,7 @@
                      <p><?= character_limiter($f->content, 200) ?></p>
                      <div class="row">
                         <div class="col text-center">
-                           <a href="<?= base_url("blog/read/$f->seo_title") ?>" class="genric-btn danger circle arrow">Continue Reading<span class="lnr lnr-arrow-right"></span></a>
+                           <a href="<?= base_url("blog/read/$f->seo_title") ?>" class="genric-btn danger circle arrow">Lanjut Baca<span class="lnr lnr-arrow-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -32,11 +32,11 @@
    </div>
    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <span class="sr-only">Sebelumnya</span>
    </a>
    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <span class="sr-only">Selanjutnya</span>
    </a>
 </div>
 <!--================ End Home Banner Area =================-->
@@ -47,7 +47,7 @@
 <section class="choice_area mt-4">
    <div class="container">
       <div class="main_title2">
-         <h2>Editor's Choice</h2>
+         <h2>Pilihan editor</h2>
       </div>
       <div class="row choice_inner">
          <?php foreach ($choice as $c) : ?>
@@ -82,7 +82,7 @@
 
             <!-- Last News -->
             <div class="main_title2">
-               <h2>Latest News</h2>
+               <h2>Berita Terbaru</h2>
             </div>
             <div class="latest_news">
                <?php foreach ($lastNews as $ln) : ?>
@@ -110,9 +110,6 @@
             <!-- End of Last News -->
 
             <div class="tavel_food mt-5">
-               <div class="main_title2">
-                  <h2>Gaming Corner</h2>
-               </div>
                <div class="row">
                   <div class="col-lg-6">
                      <div class="row choice_small_inner">
@@ -166,7 +163,7 @@
 
             <div class="row mt-5">
                <div class="col text-center">
-                  <a href="<?= base_url('blog') ?>" class="genric-btn danger-border circle arrow">View More<span class="lnr lnr-arrow-right"></span></a>
+                  <a href="<?= base_url('blog') ?>" class="genric-btn danger-border circle arrow">Lihat Lebih Banyak<span class="lnr lnr-arrow-right"></span></a>
                </div>
             </div>
 

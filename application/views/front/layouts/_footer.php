@@ -13,11 +13,11 @@
          <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="single-footer-widget">
                <div class="f_title">
-                  <h3>Quick Links</h3>
+                  <h3>Tautan Cepat</h3>
                </div>
                <div class="row">
                   <div class="col-6">
-                     <h5 style="color: white">Category</h5>
+                     <h5 style="color: white">kategori</h5>
                      <ul class="list mt-3">
                         <?php foreach ($category as $c) : ?>
                            <li><a href="<?= base_url("blog/category/$c->slug") ?>"><?= $c->category_name ?></a></li>
@@ -27,8 +27,7 @@
                   <div class="col-6">
                      <h5 style="color: white">Info</h5>
                      <ul class="list">
-                        <li><a href="<?= base_url('contact') ?>">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="<?= base_url('contact') ?>">Tentang</a></li>
                      </ul>
                   </div>
                </div>
@@ -37,7 +36,7 @@
          <div class="col-lg-4 col-md-6">
             <div class="single-footer-widget m_news_widgets">
                <div class="f_title">
-                  <h3>Social Networks</h3>
+                  <h3>Jaringan Sosial</h3>
                </div>
                <div class="col-lg-4 col-md-4 footer-social icon mx-auto">
                   <a href="https://www.facebook.com/CNNIndonesia/?locale=id_ID"><i class="fa fa-facebook"></i></a>

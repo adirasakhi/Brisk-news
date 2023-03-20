@@ -1,27 +1,27 @@
 <div class="container">
    <div class="row">
       <div class="col">
-         <h3 class="page-header">Manage Web Identity</h3>
+         <h3 class="page-header">Mengatur Identitas Web</h3>
       </div>
    </div>
 
-   <button class="btn btn-outline-secondary btn-sm mt-3"onclick="reload_table()">
+   <button class="btn btn-outline-secondary btn-sm mt-3" onclick="reload_table()">
       <i class="fas fa-sync-alt"></i> Reload
    </button>
 
    <br><br>
 
    <div class="table-responsive">
-      <table id="tableIdentity" class="table table-striped table-bordered"  cellspacing="0" width="100%">
+      <table id="tableIdentity" class="table table-striped table-bordered" cellspacing="0" width="100%">
          <thead>
-         <tr>
-            <th>#</th>
-            <th>Website Name</th>
-            <th>Action</th>
-         </tr>
+            <tr>
+               <th>#</th>
+               <th>Nama Website</th>
+               <th>Aksi</th>
+            </tr>
          </thead>
          <tbody>
-         
+
          </tbody>
       </table>
    </div>
@@ -33,52 +33,52 @@
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
          <div class="modal-header">
-         <h5 class="modal-title" id="modal-title">Identity menu</h5>
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-         </button>
+            <h5 class="modal-title" id="modal-title">Identitas menu</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+            </button>
          </div>
          <div class="modal-body">
             <form action="#" class="form-horizontal" id="form">
                <input type="hidden" name="id">
 
                <div class="form-group row">
-                  <label for="web_name" class="col-sm-3 col-form-label">Website Name</label>
+                  <label for="web_name" class="col-sm-3 col-form-label">Nama Website</label>
                   <div class="col-sm-9">
-                  <input type="text" class="form-control" name="web_name">
+                     <input type="text" class="form-control" name="web_name" readonly>
                   </div>
-               </div> 
+               </div>
 
                <div class="form-group row">
-                  <label for="web_address" class="col-sm-3 col-form-label">Website Address</label>
+                  <label for="web_address" class="col-sm-3 col-form-label">Alamat Website</label>
                   <div class="col-sm-9">
-                  <input type="text" class="form-control" name="web_address">
+                     <input type="text" class="form-control" name="web_address" readonly>
                   </div>
-               </div> 
+               </div>
 
                <div class="form-group row">
-                  <label for="meta_description" class="col-sm-3 col-form-label"> Description</label>
+                  <label for="meta_description" class="col-sm-3 col-form-label"> Deskripsi</label>
                   <div class="col-sm-9">
-                  <textarea name="meta_description" cols="30" rows="3" class="form-control"></textarea>
+                     <textarea name="meta_description" cols="30" rows="3" class="form-control"></textarea>
                   </div>
-               </div> 
+               </div>
 
                <div class="form-group row">
                   <label for="meta_keyword" class="col-sm-3 col-form-label">Meta Keyword</label>
                   <div class="col-sm-9">
-                  <textarea name="meta_keyword" cols="30" rows="3" class="form-control"></textarea>
+                     <textarea name="meta_keyword" cols="30" rows="3" class="form-control"></textarea>
                   </div>
                </div>
 
                <div class="form-group row" id="photo-preview">
-                  <label class="col-sm-3 col-form-label">Photo</label>
+                  <label class="col-sm-3 col-form-label">Foto</label>
                   <div class="col-sm-9">
-                     (No photo)
+                     (Tidak ada Foto)
                   </div>
                </div>
-               
+
                <div class="form-group row">
-                  <label class="col-sm-3 col-form-label" id="label-photo">Upload Photo </label>
+                  <label class="col-sm-3 col-form-label" id="label-photo">Unggah Foto</label>
                   <div class="col-sm-9">
                      <input name="photo" type="file">
                   </div>
@@ -86,8 +86,8 @@
             </form>
          </div>
          <div class="modal-footer">
-         <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
-         <button type="button" class="btn btn-sm btn-primary" onclick="save()" id="btn_save">Save</button>
+            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-sm btn-primary" onclick="save()" id="btn_save">Simpan</button>
          </div>
       </div>
    </div>
